@@ -1,10 +1,11 @@
+
 import React, { useEffect, useState } from 'react';
 
 const AggieCard = () => {
   const [cardData, setCardData] = useState<any>(null);
 
   useEffect(() => {
-    fetch('https://some-aggi-card-api.com')
+    fetch('/api/aggie-card')
       .then((response) => response.json())
       .then((data) => setCardData(data))
       .catch((error) => console.error(error));
