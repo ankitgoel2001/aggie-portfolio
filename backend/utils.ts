@@ -12,9 +12,6 @@ interface AggieCardData {
 function generateAggieCard(formData: AggieCardData) {
 const { name, email, phone, photo, location, year, major, gradDate } = formData;
 
-const image = 'https://via.placeholder.com/300x200';
-const studentId = '000000000';
-
 const aggieCardData: AggieCardData = {
     name: formData.name,
     email: formData.email,
