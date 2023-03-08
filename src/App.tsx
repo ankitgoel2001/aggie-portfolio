@@ -25,8 +25,8 @@ function App() {
   };
 
   const handleViewAggieCardClick = () => {
-    window.open('/AggieCard', '_blank');
-  };
+    window.open('/api/aggie-card', '_blank');
+  }
 
   return (
     <div>

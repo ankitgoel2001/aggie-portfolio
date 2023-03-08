@@ -28,7 +28,7 @@ const InputForm = ({ onSubmit }: InputFormProps) => {
     event.preventDefault();
 
     try {
-      const response = await fetch('/aggie-card', {
+      const response = await fetch('/api/aggie-card', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
